@@ -1,1 +1,41 @@
-<p>register-page works!</p>
+<div class="flex flex-column">
+
+    <span class="text-2xl flex justify-content-center mb-4">Crear una cuenta</span>
+
+
+    <div class="flex justify-content-between flex-wrap">
+        <mat-form-field style="width:48%">
+            <mat-label>Nombre</mat-label>
+            <input type="text" matInput>
+        </mat-form-field>
+
+        <mat-form-field style="width:48%">
+            <mat-label>Apellido</mat-label>
+            <input type="text" matInput>
+        </mat-form-field>    
+    </div>
+
+    <mat-form-field>
+        <mat-label>Nombre de usuario</mat-label>
+        <input type="text" matInput>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Correo electrónico</mat-label>
+        <input type="email" matInput>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Contraseña</mat-label>
+        <input type="password" matInput>
+    </mat-form-field>
+
+    <button mat-button mat-flat-button color="primary">
+        Registrarse
+    </button>
+
+    <div class="flex justify-content-center mt-5">
+        <a routerLink="/auth/login">¿Ya tienes cuenta? Inicia sesión</a>
+    </div>
+
+</div>
