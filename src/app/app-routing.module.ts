@@ -12,6 +12,10 @@ const routes: Routes = [
     loadChildren: () => import('./closet/closet.module').then( m => m.ClosetModule ),
   },
   {
+    path: 'profiles',
+    loadChildren: () => import('./profiles/profiles.module').then( m => m.ProfilesModule ),
+  },
+  {
     path: '404',
     component: Error404PageComponent
   },

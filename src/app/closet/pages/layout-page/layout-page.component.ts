@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class LayoutPageComponent {
 
+  public sidenavItems = [
+    { label:'Armario', icon:'local_library', url:'./list' },
+    { label:'Añadir', icon:'add', url:'./add-clothes' },
+    { label:'Crear set', icon:'style', url:'./create-set' },
+  ]
+
 }
