@@ -1,1 +1,54 @@
-<p>clothes-page works!</p>
+<ng-template #cargar>
+    <mat-grid-list cols="1">
+        <mat-grid-tile>
+            <mat-spinner></mat-spinner>
+        </mat-grid-tile>
+    </mat-grid-list>
+</ng-template>
+
+<div *ngIf="Clothe_item; else cargar" class="grid p-2">
+    
+    <mat-card class="col-12 sm:col-6">
+
+        <img [src]="Clothe_item | clothesImage" [alt]="Clothe_item.IdPrenda" mat-card-image>
+
+    </mat-card>
+
+    <mat-card class="col-12 sm:col-6">
+        
+        <mat-card-header>
+            <mat-card-title>Informacion de la prenda</mat-card-title>
+        </mat-card-header>
+
+        <mat-divider class="mt-4"></mat-divider>
+
+        <mat-card-content> 
+            
+            <mat-list>
+                <mat-list-item><strong>{{Clothe_item.IdTipo}}</strong></mat-list-item>
+                <mat-list-item><strong>Marca: </strong>{{Clothe_item.Marca}}</mat-list-item>
+                <mat-list-item><strong>Talla: </strong>{{Clothe_item.Talla}}</mat-list-item>
+                <mat-list-item><strong>Color: </strong> 
+                    <mat-chip *ngFor="let color of Clothe_item.Color.split(',')">
+                    {{color}}
+                    </mat-chip> 
+                </mat-list-item>
+            
+            </mat-list>
+
+        </mat-card-content>
+
+        <mat-divider class="mt-4"></mat-divider>
+
+        <button 
+            class="mt-4"
+            mat-raised-button
+            color="primary"
+            (click)="goBack()"
+        >
+            Volver
+        </button>
+        
+    </mat-card>
+
+</div>

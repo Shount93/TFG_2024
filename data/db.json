@@ -1,0 +1,64 @@
+{
+    "Usuarios": [
+      {
+        "IdUsuario": 1,
+        "Usuario": "admin",
+        "Contrasenia": "admin",
+        "Nombre": "Gorka",
+        "Apellido": "Urrutia",
+        "Email": "gorka.up@gmial.com"
+      }
+    ],
+    "Prendas": [
+      {
+        "id": "1",
+        "Talla": "34",
+        "Color": "Azul, Morado",
+        "Marca": "Levis",
+        "IdTipo": "tp_Pantalon",
+        "IdUsuario": "1"
+      },
+      {
+        "id": "2",
+        "Talla": "22",
+        "Color": "Rojo, Azul, Amarillo, Verde, Morado",
+        "Marca": "Zara",
+        "IdTipo": "tp_Camiseta",
+        "IdUsuario": "1"
+      },
+      {
+        "id": "3",
+        "Talla": "12",
+        "Color": "Verde, Amarillo, Rojo, Negro",
+        "Marca": "Pull&Bear",
+        "IdTipo": "tp_Gorro",
+        "IdUsuario": "1"
+      },
+      {
+        "id": "4",
+        "Talla": "34",
+        "Color": "Amarillo, Azul, Blanco",
+        "Marca": "Nike",
+        "IdTipo": "tp_Zapatillas",
+        "IdUsuario": "1"
+      }
+    ],
+    "Tipos": [
+        {
+          "IdTipo": "tp_Zapatillas",
+          "NombreTipo": "Zapatillas"
+        },
+        {
+            "IdTipo": "tp_Gorro",
+            "NombreTipo": "Gorro"
+        },
+        {
+            "IdTipo": "tp_Camiseta",
+            "NombreTipo": "Camiseta"
+        },
+        {
+            "IdTipo": "tp_Pantalon",
+            "NombreTipo": "Pantalon"
+        }
+      ]
+}

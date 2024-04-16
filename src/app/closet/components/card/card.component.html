@@ -1,0 +1,44 @@
+<mat-card>
+  
+    <!--Imagen-->
+    <img mat-card-image [src]=" Clothe_item|clothesImage" [alt]="Clothe_item.IdTipo">
+
+    <mat-card-content>
+        <p>
+            <strong>{{Clothe_item.IdTipo}} - {{Clothe_item.Marca}}</strong>
+            <br>
+            <strong>Talla: </strong>{{Clothe_item.Talla}}
+            <br>
+            <mat-chip-listbox>
+                <mat-chip *ngFor="let color of Clothe_item.Color.split(',') | slice:0:3">
+                    {{color}}
+                </mat-chip>
+            </mat-chip-listbox>
+        </p>
+    </mat-card-content>
+
+    <mat-divider></mat-divider>
+
+    <mat-card-actions>
+
+        <button mat-button
+            mat-raised
+            color="primary"
+            [routerLink]="['/closet/edit-clothes/', Clothe_item.id]">
+            <mat-icon>edit</mat-icon>
+            Editar
+        </button>
+
+        <span class="spacer"></span>
+
+        <button mat-button
+            mat-raised
+            color="black"
+            [routerLink]="['/closet/', Clothe_item.id]">
+            <mat-icon>more_horiz</mat-icon>
+            Más
+        </button>
+
+    </mat-card-actions>
+
+</mat-card>

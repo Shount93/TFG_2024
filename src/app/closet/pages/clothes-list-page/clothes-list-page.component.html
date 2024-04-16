@@ -1,1 +1,11 @@
-<p>clothes-list-page works!</p>
+<h1>Armario</h1>
+<mat-divider></mat-divider>
+
+<div class="grid bm-8 pt-2">
+
+    <div *ngFor="let item of clothes"
+        class="col-12 sm:col-4 md.col-3 xl:col-2">
+        <clothes-item-card [Clothe_item]="item"></clothes-item-card>
+    </div>
+
+</div>

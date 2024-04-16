@@ -8,6 +8,8 @@ import { CreateSetPageComponent } from './pages/create-set-page/create-set-page.
 import { ClothesPageComponent } from './pages/clothes-page/clothes-page.component';
 import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { MaterialModule } from '../material/material.module';
+import { CardComponent } from './components/card/card.component';
+import { ClothesImagePipe } from './pipes/clothes-image.pipe';
 
 
 @NgModule({
@@ -17,6 +19,8 @@ import { MaterialModule } from '../material/material.module';
     CreateSetPageComponent,
     ClothesPageComponent,
     LayoutPageComponent,
+    CardComponent,
+    ClothesImagePipe,
   ],
   imports: [
     CommonModule,
