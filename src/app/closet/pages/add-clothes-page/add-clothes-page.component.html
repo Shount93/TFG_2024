@@ -1,1 +1,116 @@
-<p>add-clothes-page works!</p>
+<h1>
+    {{currentClothe.id ? 'Editar' : 'Agregar'}}
+    prenda de ropa
+</h1>
+
+<mat-divider class="mb-2"></mat-divider>
+
+<div class="grid">
+    <div class="col-12 sm:col-6">
+        <mat-card></mat-card>
+        <mat-card>
+            <mat-card-content>
+                <form class="grid" [formGroup]="ClotheForm" (ngSubmit)="onSubmit()">
+
+                    <mat-form-field class="col-12 sm:col-6" style="width: 100%;">
+                        <mat-label>Tipo</mat-label>
+                        <mat-select
+                            required
+                            formControlName="IdTipo"
+                        >
+                            <mat-option *ngFor="let optionType of types" [value]="optionType.id" requiered>{{optionType.id}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <mat-form-field class="col-12 sm:col-6">
+                        <mat-label>Marca</mat-label>
+                        <mat-select
+                            required
+                            formControlName="IdMarca"
+                        >
+                            <mat-option *ngFor="let optionBrand of brands" [value]="optionBrand.id">{{optionBrand.id}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <mat-form-field class="col-12 sm:col-6">
+                        <mat-label>Talla</mat-label>
+                        <input
+                            matInput
+                            type="number"
+                            required
+                            formControlName="Talla"
+                        />
+                    </mat-form-field>
+
+                    <mat-form-field class="col-12 sm:col-6" style="width: 100%;">
+                        <mat-label>Color</mat-label>
+                        <mat-select  
+                            required
+                            formControlName="Color"
+                        >
+                            <mat-option *ngFor="let color of colores" [value]="color">{{ color }}</mat-option>
+                          </mat-select>
+                    </mat-form-field>
+
+                    <mat-form-field class="col-12 sm:col-6">
+                        <mat-label>Estacion de uso</mat-label>
+                        <mat-select
+                            required
+                            formControlName="Estacion"
+                        >
+                            <mat-option *ngFor="let optionEstacion of estacion" [value]="optionEstacion">{{optionEstacion}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <mat-form-field class="col-12 sm:col-6">
+                        <mat-label>Estilo de Ropa</mat-label>
+                        <mat-select
+                            required
+                            formControlName="Estilo"
+                        >
+                            <mat-option *ngFor="let optionEstilo of estilo" [value]="optionEstilo">{{optionEstilo}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <mat-form-field class="col-12 sm:col-6" style="width: 100%;">
+                        <mat-label>Link a la imagen</mat-label>
+                        <input
+                            matInput
+                            type="text"
+                            formControlName="alt_image"
+                        >
+                    </mat-form-field>
+
+                </form>
+
+               <div class="flex justify-content-between">
+                <button
+                    *ngIf="currentClothe.id"
+                    (click)="onDeleteCloth()"
+                    mat-flat-button
+                    color="warn"
+                >
+                Borrar
+                </button>
+                <span></span>
+                <button
+                    mat-flat-button
+                    color="primary"
+                    (click)="onSubmit()"
+                >
+                <mat-icon>save</mat-icon>
+                Guardar
+                </button>
+               </div>
+
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="col-12 sm:col-6">
+
+        <mat-card>
+            <img [src]="currentClothe | clothesImage" alt="Imagen de la prenda" mat-card-image>
+        </mat-card>
+
+    </div>
+</div>

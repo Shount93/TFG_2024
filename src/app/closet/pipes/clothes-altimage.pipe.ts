@@ -2,19 +2,15 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { Clothe_item } from '../interfaces/Clothe_item.interface';
 
 @Pipe({
-  name: 'clothesImage'
+  name: 'clothesAltImage'
 })
-export class ClothesImagePipe implements PipeTransform {
+export class ClothesAltImagePipe implements PipeTransform {
 
   transform(clothes: Clothe_item): string {
     
-    if (!clothes.id && !clothes.alt_image) {
-      return 'assets/no-image.jpg'
-    }
-
     if (clothes.alt_image) return clothes.alt_image;
 
-    return  `assets/Clothes/${clothes.IdTipo}${clothes.id}.jpg`
+    return  `assets/no-image.jpg`
 
   }
 

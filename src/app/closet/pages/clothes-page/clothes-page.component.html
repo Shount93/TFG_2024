@@ -10,7 +10,7 @@
     
     <mat-card class="col-12 sm:col-6">
 
-        <img [src]="Clothe_item | clothesImage" [alt]="Clothe_item.IdPrenda" mat-card-image>
+        <img [src]="Clothe_item | clothesImage" [alt]="Clothe_item.id" mat-card-image>
 
     </mat-card>
 
@@ -26,7 +26,7 @@
             
             <mat-list>
                 <mat-list-item><strong>{{Clothe_item.IdTipo}}</strong></mat-list-item>
-                <mat-list-item><strong>Marca: </strong>{{Clothe_item.Marca}}</mat-list-item>
+                <mat-list-item><strong>Marca: </strong>{{Clothe_item.IdMarca}}</mat-list-item>
                 <mat-list-item><strong>Talla: </strong>{{Clothe_item.Talla}}</mat-list-item>
                 <mat-list-item><strong>Color: </strong> 
                     <mat-chip *ngFor="let color of Clothe_item.Color.split(',')">

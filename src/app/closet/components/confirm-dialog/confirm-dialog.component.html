@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>¿Estas seguro que quieres borrarlo?</h1>
+<div mat-dialog-content>
+  <p>Este proceso eliminara la prenda de tu armario ¿Estas seguro que quieres hacerlo?</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button color="warn" (click)="onNoClick()">Cancelar</button>
+  <span class="spacer"></span>
+  <button mat-button color="primary" (click)="onConfirm()" cdkFocusInitial>Confirmar</button>
+</div>

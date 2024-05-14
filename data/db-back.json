@@ -1,64 +1,156 @@
 {
-    "Usuarios": [
-      {
-        "IdUsuario": 1,
-        "Usuario": "admin",
-        "Contrasenia": "admin",
-        "Nombre": "Gorka",
-        "Apellido": "Urrutia",
-        "Email": "gorka.up@gmial.com"
-      }
-    ],
-    "Prendas": [
-      {
-        "IdPrenda": "1",
-        "Talla": "34",
-        "Color": "Azul",
-        "Marca": "Levis",
-        "IdTipo": "tp_Pantalon",
-        "IdUsuario": "1"
-      },
-      {
-        "IdPrenda": "2",
-        "Talla": "22",
-        "Color": "Rojo",
-        "Marca": "Zara",
-        "IdTipo": "tp_Camiseta",
-        "IdUsuario": "1"
-      },
-      {
-        "IdPrenda": "1",
-        "Talla": "12",
-        "Color": "Verde",
-        "Marca": "Pull&Bear",
-        "IdTipo": "tp_Gorro",
-        "IdUsuario": "1"
-      },
-      {
-        "IdPrenda": "1",
-        "Talla": "34",
-        "Color": "Amarillo",
-        "Marca": "Nike",
-        "IdTipo": "tp_Zapatillas",
-        "IdUsuario": "1"
-      }
-    ],
-    "Tipos": [
-        {
-          "IdTipo": "tp_Zapatillas",
-          "NombreTipo": "Zapatillas"
-        },
-        {
-            "IdTipo": "tp_Gorro",
-            "NombreTipo": "Gorro"
-        },
-        {
-            "IdTipo": "tp_Camiseta",
-            "NombreTipo": "Camiseta"
-        },
-        {
-            "IdTipo": "tp_Pantalon",
-            "NombreTipo": "Pantalon"
-        }
-      ]
+  "Usuarios": [
+    {
+      "id": "1",
+      "Usuario": "admin",
+      "Contrasenia": "admin",
+      "Nombre": "Gorka",
+      "Apellido": "Urrutia",
+      "Email": "gorka.up@gmial.com"
+    }
+  ],
+  "Prendas": [
+    {
+      "id": "1",
+      "Talla": "28",
+      "Color": "Azul marino",
+      "IdMarca": "Zara",
+      "IdTipo": "Pantalon",
+      "IdUsuario": "1",
+      "Estacion": "Primavera",
+      "Estilo": "Deportivo",
+      "alt_image": "https://static.cimalp.fr/22788-large_default/pantalon-de-montana-stretch-3d-flex-refuerzos.jpg"
+    },
+    {
+      "id": "2",
+      "Talla": "44",
+      "Color": "Celeste",
+      "IdMarca": "Mango",
+      "IdTipo": "Camiseta",
+      "IdUsuario": "1",
+      "Estacion": "Verano",
+      "Estilo": "Formal",
+      "alt_image": ""
+    },
+    {
+      "id": "3",
+      "Talla": "32",
+      "Color": "Amarillo",
+      "IdMarca": "Stradivarius",
+      "IdTipo": "Gorro",
+      "IdUsuario": "1",
+      "Estacion": "Invierno",
+      "Estilo": "Deportivo",
+      "alt_image": ""
+    },
+    {
+      "id": "4",
+      "Talla": "34",
+      "Color": "Blanco",
+      "IdMarca": "H&M",
+      "IdTipo": "Zapatillas",
+      "IdUsuario": "1",
+      "Estacion": "Otoño",
+      "Estilo": "Casual",
+      "alt_image": ""
+    },
+    {
+      "id": "5315",
+      "Talla": 44,
+      "Color": "Blanco",
+      "IdMarca": "Mango",
+      "IdTipo": "Camiseta",
+      "IdUsuario": "1",
+      "alt_image": "https://www.sublimet.com/12457-large_default/camisetas-tecnicas-blancas-para-sublimacion.jpg",
+      "Estacion": "Otoño",
+      "Estilo": "Deportivo"
+    },
+    {
+      "id": "9238",
+      "Talla": 40,
+      "Color": "Negro",
+      "IdMarca": "Otro",
+      "IdTipo": "Gorro",
+      "IdUsuario": "1",
+      "alt_image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f1b5d6c6da444b97bce9aa250100578a_9366/Gorro_Adicolor_Cuff_Negro_ED8712_01_standard.jpg",
+      "Estacion": "Invierno",
+      "Estilo": "Casual"
+    }
+  ],
+  "Tipos": [
+    {
+      "id": "Zapatillas"
+    },
+    {
+      "id": "Gorro"
+    },
+    {
+      "id": "Camiseta"
+    },
+    {
+      "id": "Pantalon"
+    }
+  ],
+  "Marcas": [
+    {
+      "id": "Zara"
+    },
+    {
+      "id": "Mango"
+    },
+    {
+      "id": "MassimoDutti"
+    },
+    {
+      "id": "Pull&Bear"
+    },
+    {
+      "id": "Bershka"
+    },
+    {
+      "id": "Stradivarius"
+    },
+    {
+      "id": "Desigual"
+    },
+    {
+      "id": "H&M"
+    },
+    {
+      "id": "C&A"
+    },
+    {
+      "id": "Springfield"
+    },
+    {
+      "id": "Cortefiel"
+    },
+    {
+      "id": "AdolfoDominguez"
+    },
+    {
+      "id": "Primark"
+    },
+    {
+      "id": "Levis"
+    },
+    {
+      "id": "Tommy Hilfiger"
+    },
+    {
+      "id": "Diesel"
+    },
+    {
+      "id": "Pepe Jeans"
+    },
+    {
+      "id": "Punto Roma"
+    },
+    {
+      "id": "Oysho"
+    },
+    {
+      "id": "Otro"
+    }
+  ]
 }

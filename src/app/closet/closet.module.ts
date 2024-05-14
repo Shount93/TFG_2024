@@ -10,6 +10,9 @@ import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { MaterialModule } from '../material/material.module';
 import { CardComponent } from './components/card/card.component';
 import { ClothesImagePipe } from './pipes/clothes-image.pipe';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ClothesAltImagePipe } from './pipes/clothes-altimage.pipe';
+import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
 
 
 @NgModule({
@@ -21,11 +24,14 @@ import { ClothesImagePipe } from './pipes/clothes-image.pipe';
     LayoutPageComponent,
     CardComponent,
     ClothesImagePipe,
+    ClothesAltImagePipe,
+    ConfirmDialogComponent,
   ],
   imports: [
     CommonModule,
     ClosetRoutingModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ]
 })
 export class ClosetModule { }
