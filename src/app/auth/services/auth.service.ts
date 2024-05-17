@@ -19,7 +19,6 @@ export class AuthService {
     }
     
     login(user: string, password:string) {
-        // Usamos 'some' para verificar si existe al menos un elemento que coincida
         const found = this.availabeUsers.some(element => {
             if (element.user == user && element.password == password) {
                 this.user = element;
