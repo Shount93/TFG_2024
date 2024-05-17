@@ -1,9 +1,9 @@
 {
-  "Usuarios": [
+  "users": [
     {
       "id": "1",
-      "Usuario": "admin",
-      "Contrasenia": "admin",
+      "user": "admin",
+      "password": "admin",
       "Nombre": "Gorka",
       "Apellido": "Urrutia",
       "Email": "gorka.up@gmial.com"

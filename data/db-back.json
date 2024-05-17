@@ -1,8 +1,8 @@
 {
-  "Usuarios": [
+  "users": [
     {
       "id": "1",
-      "Usuario": "admin",
+      "user": "admin",
       "Contrasenia": "admin",
       "Nombre": "Gorka",
       "Apellido": "Urrutia",
@@ -55,25 +55,14 @@
       "alt_image": ""
     },
     {
-      "id": "5315",
+      "id": "2645",
       "Talla": 44,
       "Color": "Blanco",
-      "IdMarca": "Mango",
+      "IdMarca": "Zara",
       "IdTipo": "Camiseta",
       "IdUsuario": "1",
       "alt_image": "https://www.sublimet.com/12457-large_default/camisetas-tecnicas-blancas-para-sublimacion.jpg",
-      "Estacion": "Otoño",
-      "Estilo": "Deportivo"
-    },
-    {
-      "id": "9238",
-      "Talla": 40,
-      "Color": "Negro",
-      "IdMarca": "Otro",
-      "IdTipo": "Gorro",
-      "IdUsuario": "1",
-      "alt_image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f1b5d6c6da444b97bce9aa250100578a_9366/Gorro_Adicolor_Cuff_Negro_ED8712_01_standard.jpg",
-      "Estacion": "Invierno",
+      "Estacion": "Primavera",
       "Estilo": "Casual"
     }
   ],
