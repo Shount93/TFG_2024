@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { RegisterPageComponent } from './pages/register-page/register-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 // localhost:4200/auth/
 const routes: Routes = [
@@ -18,7 +19,10 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [
+    RouterModule.forChild(routes),
+    ReactiveFormsModule
+  ],
   exports: [RouterModule]
 })
 export class AuthRoutingModule { }

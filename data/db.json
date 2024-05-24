@@ -6,7 +6,7 @@
       "password": "admin",
       "Nombre": "Gorka",
       "Apellido": "Urrutia",
-      "Email": "gorka.up@gmial.com"
+      "Email": "gorka.up@gmail.com"
     }
   ],
   "Prendas": [
@@ -14,7 +14,7 @@
       "id": "1",
       "Talla": "28",
       "Color": "Azul marino",
-      "IdMarca": "Zara",
+      "IdMarca": "Otro",
       "IdTipo": "Pantalon",
       "IdUsuario": "1",
       "Estacion": "Primavera",
@@ -24,7 +24,7 @@
     {
       "id": "2",
       "Talla": "44",
-      "Color": "Celeste",
+      "Color": "Azul",
       "IdMarca": "Mango",
       "IdTipo": "Camiseta",
       "IdUsuario": "1",
@@ -35,7 +35,7 @@
     {
       "id": "3",
       "Talla": "32",
-      "Color": "Amarillo",
+      "Color": "Negro",
       "IdMarca": "Stradivarius",
       "IdTipo": "Gorro",
       "IdUsuario": "1",
@@ -46,13 +46,13 @@
     {
       "id": "4",
       "Talla": "34",
-      "Color": "Blanco",
+      "Color": "Marrón",
       "IdMarca": "H&M",
-      "IdTipo": "Zapatillas",
+      "IdTipo": "Zapatos",
       "IdUsuario": "1",
       "Estacion": "Otoño",
       "Estilo": "Casual",
-      "alt_image": ""
+      "alt_image": "https://d1fufvy4xao6k9.cloudfront.net/images/landings/339/brown-captoe-shoes.png"
     },
     {
       "id": "2645",
@@ -64,11 +64,69 @@
       "alt_image": "https://www.sublimet.com/12457-large_default/camisetas-tecnicas-blancas-para-sublimacion.jpg",
       "Estacion": "Primavera",
       "Estilo": "Casual"
+    },
+    {
+      "id": "6291",
+      "Talla": 44,
+      "Color": "Marrón",
+      "IdMarca": "H&M",
+      "IdTipo": "Pantalon",
+      "IdUsuario": "1",
+      "alt_image": "https://images.boardriders.com/global/element-products/all/default/large/eljnp00100_element,f_crh0_frt1.jpg",
+      "Estacion": "Otoño",
+      "Estilo": "Militar"
+    },
+    {
+      "id": "5643",
+      "Talla": 36,
+      "Color": "Gris",
+      "IdMarca": "Stradivarius",
+      "IdTipo": "Pantalon",
+      "IdUsuario": "1",
+      "alt_image": "https://storage.googleapis.com/catalog-pictures-carrefour-es/catalog/pictures/hd_510x_/8425160469429_1.jpg",
+      "Estacion": "Primavera",
+      "Estilo": "Urbano"
+    },
+    {
+      "id": "5377",
+      "Talla": 30,
+      "Color": "Azul marino",
+      "IdMarca": "Levis",
+      "IdTipo": "Camisa",
+      "IdUsuario": "1",
+      "alt_image": "https://m.media-amazon.com/images/I/71t8oH+M0TL._AC_SL1500_.jpg",
+      "Estacion": "Verano",
+      "Estilo": "Casual"
+    },
+    {
+      "id": "3654",
+      "Talla": 22,
+      "Color": "Blanco",
+      "IdMarca": "Zara",
+      "IdTipo": "Camisa",
+      "IdUsuario": "1",
+      "alt_image": "https://media.wuerth.com/stmedia/modyf/eshop/products/std.lang.all/resolutions/normal/png-546x410px/24899606.png",
+      "Estacion": "Primavera",
+      "Estilo": "Formal"
+    },
+    {
+      "id": "3849",
+      "Talla": 40,
+      "Color": "Marrón",
+      "IdMarca": "MassimoDutti",
+      "IdTipo": "Zapatos",
+      "IdUsuario": "1",
+      "alt_image": "https://www.minishoes.es/8703-large_default/zapatos-de-ante-marron-cordones.jpg",
+      "Estacion": "Otoño",
+      "Estilo": "Formal"
     }
   ],
   "Tipos": [
     {
       "id": "Zapatillas"
+    },
+    {
+      "id": "Zapatos"
     },
     {
       "id": "Gorro"
@@ -77,7 +135,25 @@
       "id": "Camiseta"
     },
     {
+      "id": "Camisa"
+    },
+    {
       "id": "Pantalon"
+    },
+    {
+      "id": "Falda"
+    },
+    {
+      "id": "Vestido"
+    },
+    {
+      "id": "Chaqueta"
+    },
+    {
+      "id": "Sudadera"
+    },
+    {
+      "id": "Jersei"
     }
   ],
   "Marcas": [

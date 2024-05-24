@@ -38,7 +38,6 @@ export class AddClothesPageComponent implements OnInit{
 
   estacion: string[] = ['Primavera', 'Verano', 'Otoño', 'Invierno']
 
-  //Cambiarlo para q este como la interfaz
   estilo: string[] = ['Casual', 'Formal', 'Deportivo', 'Bohemio', 'Urbano', 'Minimalista', 'Playero', 'Gótico', 'Hipster', 'Militar', 'Tradicional', 'Otro']
 
   constructor(
@@ -52,6 +51,7 @@ export class AddClothesPageComponent implements OnInit{
   ngOnInit(): void {
     this.ClothesService.getClothesTypes().subscribe( clothes_types => this.types = clothes_types);
     this.ClothesService.getClothesBrands().subscribe( clothes_brands => this.brands = clothes_brands);
+    console.log(this.brands);
 
     if(!this.router.url.includes('edit-clothes')) return;
 
@@ -81,6 +81,7 @@ export class AddClothesPageComponent implements OnInit{
     if(this.currentClothe.id){
       this.ClothesService.updateClothes(this.currentClothe)
         .subscribe(cloth =>{
+          this.router.navigate(['/closet/list']);
           this.showSnackbar('Registro actualizado');
         });
 
@@ -89,7 +90,7 @@ export class AddClothesPageComponent implements OnInit{
 
     this.ClothesService.addClothes(this.currentClothe)
       .subscribe(cloth =>{
-        this.router.navigate(['/closet/edit-clothes',cloth.id]);
+        this.router.navigate(['/closet/list']);
         this.showSnackbar('Registro creado');
         
       })

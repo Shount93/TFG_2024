@@ -34,8 +34,9 @@
             <mat-icon>menu</mat-icon>
         </button>
         <span class="spacer"></span>
-        <button mat-icon-button>
-            <mat-icon>account_circle</mat-icon>
+        <span>{{user?.Email}}</span>
+        <button mat-button (click)="onLogout()">
+            Logout
         </button>
 
     </mat-toolbar>

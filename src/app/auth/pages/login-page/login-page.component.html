@@ -3,19 +3,19 @@
     <span class="text-2xl flex justify-content-center mb-4">Iniciar sesión</span>
 
 
-    <mat-form-field>
-        <mat-label>Nombre de usuario</mat-label>
-        <input type="text" matInput>
-    </mat-form-field>
-    
-    <mat-form-field>
-        <mat-label>Contraseña</mat-label>
-        <input type="password" matInput>
-    </mat-form-field>
+        <mat-form-field>
+            <mat-label>Nombre de usuario</mat-label>
+            <input type="text" matInput>
+        </mat-form-field>
+        
+        <mat-form-field>
+            <mat-label>Contraseña</mat-label>
+            <input type="password" matInput >
+        </mat-form-field>
 
-    <button mat-button mat-flat-button color="primary" (click)="onLogin()">
-        Iniciar sesión
-    </button>
+        <button mat-button mat-flat-button color="primary" (click)="onLogin()">
+            Iniciar sesión
+        </button>
 
     <div class="flex justify-content-center mt-5">
         <a routerLink="/auth/new-account">¿No tienes una cuenta? Regístrate</a>

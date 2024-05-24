@@ -37,5 +37,6 @@ export class ClothesPageComponent implements OnInit {
   goBack():void {
     this.router.navigateByUrl('closet/list')
   }
+  
 
 }

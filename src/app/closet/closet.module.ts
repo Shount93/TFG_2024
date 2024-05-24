@@ -10,7 +10,7 @@ import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { MaterialModule } from '../material/material.module';
 import { CardComponent } from './components/card/card.component';
 import { ClothesImagePipe } from './pipes/clothes-image.pipe';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ClothesAltImagePipe } from './pipes/clothes-altimage.pipe';
 import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
 
@@ -31,7 +31,8 @@ import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dial
     CommonModule,
     ClosetRoutingModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class ClosetModule { }

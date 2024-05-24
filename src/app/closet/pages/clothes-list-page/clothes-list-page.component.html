@@ -1,11 +1,55 @@
 <h1>Armario</h1>
 <mat-divider></mat-divider>
 
-<div class="grid bm-8 pt-2">
+<div class="filters">
+    <!-- Filtro por Tipo -->
+    <mat-form-field appearance="fill">
+        <mat-label>Tipo</mat-label>
+        <mat-select [(ngModel)]="selectedTipo" (selectionChange)="applyFilters()">
+            <mat-option value="">Todos</mat-option>
+            <mat-option *ngFor="let tipo of tipos" [value]="tipo">{{ tipo }}</mat-option>
+        </mat-select>
+    </mat-form-field>
 
-    <div *ngFor="let item of clothes"
-        class="col-12 sm:col-4 md.col-3 xl:col-2">
+    <!-- Filtro por Color -->
+    <mat-form-field appearance="fill">
+        <mat-label>Color</mat-label>
+        <mat-select [(ngModel)]="selectedColor" (selectionChange)="applyFilters()">
+            <mat-option value="">Todos</mat-option>
+            <mat-option *ngFor="let color of colores" [value]="color">{{ color }}</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <!-- Filtro por Marca -->
+    <mat-form-field appearance="fill">
+        <mat-label>Marca</mat-label>
+        <mat-select [(ngModel)]="selectedMarca" (selectionChange)="applyFilters()">
+            <mat-option value="">Todos</mat-option>
+            <mat-option *ngFor="let marca of marcas" [value]="marca">{{ marca }}</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <!-- Filtro por Estación -->
+    <mat-form-field appearance="fill">
+        <mat-label>Estación</mat-label>
+        <mat-select [(ngModel)]="selectedEstacion" (selectionChange)="applyFilters()">
+            <mat-option value="">Todas</mat-option>
+            <mat-option *ngFor="let estacion of estaciones" [value]="estacion">{{ estacion }}</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <!-- Filtro por Estilo -->
+    <mat-form-field appearance="fill">
+        <mat-label>Estilo</mat-label>
+        <mat-select [(ngModel)]="selectedEstilo" (selectionChange)="applyFilters()">
+            <mat-option value="">Todos</mat-option>
+            <mat-option *ngFor="let estilo of estilos" [value]="estilo">{{ estilo }}</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+
+<div class="grid bm-8 pt-2">
+    <div *ngFor="let item of filteredClothes" class="col-12 sm:col-4 md.col-3 xl:col-2">
         <clothes-item-card [Clothe_item]="item"></clothes-item-card>
     </div>
-
 </div>
